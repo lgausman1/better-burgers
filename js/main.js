@@ -21,4 +21,3 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 	console.log("Page controller is working!");
 });
 
-// google maps

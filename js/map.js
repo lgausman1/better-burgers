@@ -11,17 +11,26 @@ function initialize() {
 
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 
+	// locations for map markers and sidebar content
 	var locations = [
 		{
 			"neighborhood": "NOPA",
 			"address": "1100 Divisadero St, San Francisco, CA",
 			"phone": "415-555-1234"
-		}
+		},
+		{
+			"neighborhood": "Pacific Heights",
+			"address": "2305 Fillmore St, San Francisco, CA",
+			"phone": "415-757-9876"
+		},
+		{
+			"neighborhood": "SOMA",
+			"address": "312 Howard St, San Francisco, CA",
+			"phone": "415-333-5151"
+		}		
 	];
 
-	console.log(locations);
-
-      // loop through posts and grab neighborhood, location and phone
+      // loop through locations and grab neighborhood, address and phone
 	$.each(locations,function (ind, obj) {
 		 
 		function create_marker (MapPos) {
@@ -42,12 +51,11 @@ function initialize() {
 
 		} // end create_marker
 
-		//var infowindow = new google.maps.InfoWindow();
 		var infowindow = $('#sidebar').hide();
 
-// pass in the location's address 
+		// pass in the location's info for sidebar content 
 		var content = "<div class='well'><h3>Better Burgers</h3>" 
-							+ "<p>" + obj.neighborhood + "</p>"
+							+ "<p><strong>" + obj.neighborhood + "</strong></p>"
 							+ "<p>" + obj.address + "</p>" 
 							+ "<p>" + obj.phone + "</p>"
 							+ "</div>";
@@ -65,6 +73,5 @@ function initialize() {
 		); // end geocode
 
 	}); // end each
-
 
 }	// end initialize
