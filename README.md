@@ -1,5 +1,5 @@
 # Better Burgers
-Single page app integrating google maps
+Single page app integrating google maps API
 
 ## Technologies used:
 Angular, 
