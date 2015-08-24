@@ -27,7 +27,17 @@ function initialize() {
 			"neighborhood": "SOMA",
 			"address": "312 Howard St, San Francisco, CA",
 			"phone": "415-333-5151"
-		}		
+		},
+		{
+			"neighborhood": "Richmond",
+			"address": "3840 Geary Blvd, San Francisco, CA",
+			"phone": "415-777-9311"
+		},
+		{
+			"neighborhood": "Mission District",
+			"address": "1173 Valencia St, San Francisco, CA",
+			"phone": "415-678-0987"
+		}
 	];
 
       // loop through locations and grab neighborhood, address and phone

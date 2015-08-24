@@ -12,6 +12,23 @@ body {
   	position: relative;
 }
 
+/* background image for home page*/
+ 
+#bigDiv {
+	background-image: url();
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+}
+
 #wrapper {
   min-height: 100%; /* setting to float footer to bottom */
 }
@@ -26,6 +43,50 @@ body {
 
 .margin-top60 {
 	margin-top: 60px;
+}
+
+.margin-top20 {
+	margin-top: 20px;
+}
+
+.burger-logo {
+	margin-top: -15px;
+	margin-right: 15px;
+	opacity: 0.2;
+}
+
+.burger-logo:hover {
+	opacity: 1.0;
+}
+
+.negTop20 {
+	margin-top: -20px;
+}
+
+/* page styles */
+
+.intro {
+	font-size: 1.3em;
+	line-height: 1.7em;
+}
+
+.bigFont {
+	font-size: 1.5em;
+}
+
+.dimWhite {
+	background-color: #ffffff;
+	opacity: 0.7;
+	padding: 20px;
+}
+
+.coverPhoto {
+	border: 6px solid #ffffff;
+	box-sizing: border-box;
+}
+
+.white {
+	color: #ffffff;
 }
 
 /* footer styles */
