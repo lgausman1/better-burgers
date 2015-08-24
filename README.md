@@ -1,10 +1,13 @@
-# better-burgers
+# Better Burgers
 Single page app integrating google maps
 
 ## Technologies used:
-Angular
-Bootstrap
+Angular, 
+Bootstrap, 
 jQuery
 
 ## User story
 Users can get more info about Better Burgers and find locations
+
+## To-Do
+Refactor to read the locations from a JSON file

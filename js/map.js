@@ -12,6 +12,7 @@ function initialize() {
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 
 	// locations for map markers and sidebar content
+	// refactor this to load json file
 	var locations = [
 		{
 			"neighborhood": "NOPA",
