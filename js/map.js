@@ -49,6 +49,7 @@ function initialize() {
 								+ "<p><strong>" + obj.neighborhood + "</strong></p>"
 								+ "<p>" + obj.address + "</p>" 
 								+ "<p>" + obj.phone + "</p>"
+								+ "<img src='" + obj.photo + "' >"
 								+ "</div>";
 	
 			// geocode the address and set the marker 			
