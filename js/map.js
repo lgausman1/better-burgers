@@ -15,7 +15,7 @@ function initialize() {
 	// refactor this to load json file
 	
 	var locations = $.ajax({
-		url: '../locations.js',
+		url: 'http://lindagausman.com/better-burgers/locations.js',
 		type: 'GET',
 		data: 'json'
 		});
