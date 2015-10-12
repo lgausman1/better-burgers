@@ -1,0 +1,32 @@
+[
+	{
+		"productTitle": "NOPA Bacon Cheeseburger",
+		"productPrice": "11.00",
+		"productDescr": "Pork loin alcatra pastrami salami spare ribs sirloin pork short ribs flank brisket ground round.",
+		"photo": "images/burger4-222x148.jpg"
+	},
+	{
+		"productTitle": "Hawaiin Burger",
+		"productPrice": "11.00",
+		"productDescr": "Pork loin alcatra pastrami salami spare ribs sirloin pork short ribs flank brisket ground round.",
+		"photo": "images/burger4-222x148.jpg"
+	},
+	{
+		"productTitle": "Teriyaki Burger",
+		"productPrice": "11.00",
+		"productDescr": "Pork loin alcatra pastrami salami spare ribs sirloin pork short ribs flank brisket ground round.",
+		"photo": "images/burger4-222x148.jpg"
+	},
+	{
+		"productTitle": "Blue Cheeseburger",
+		"productPrice": "11.00",
+		"productDescr": "Pork loin alcatra pastrami salami spare ribs sirloin pork short ribs flank brisket ground round.",
+		"photo": "images/burger4-222x148.jpg"
+	},
+	{
+		"productTitle": "Double Cheeseburger",
+		"productPrice": "11.00",
+		"productDescr": "Pork loin alcatra pastrami salami spare ribs sirloin pork short ribs flank brisket ground round.",
+		"photo": "images/burger4-222x148.jpg"
+	}
+]

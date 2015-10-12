@@ -9,43 +9,13 @@
 					<p>All beef burgers at 100% sustainable. Our chickens are all free-range. You won't believe the 100% organic veggie burger.</p>
 					<p>We  work with local farmers and ranchers blah, blah, blah, blah.</p>
 				</div><!-- end col-md-3 -->
-				<div class="col-md-8 col-md-offset-1 margin-top60">
+				<div class="col-md-8 col-md-offset-1 margin-top60" ng-controller="MenuItemsController as menu">
 					<!-- template here -->
-					<div class="col-md-6">
-						<h4>Product Title</h4>
-						<img src="http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393435-1366-768.jpg" width="360">
-						<p class="margin-top20">Product description <span class="pull-right small">$00.00</span></p>
+					<div class="col-md-6" ng-repeat="item in menu.menu_items">
 						
-					</div><!-- end col-md-6 -->
-					<div class="col-md-6">
-						<h4>Product Title</h4>
-						<img src="http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393435-1366-768.jpg" width="360">
-						<p class="margin-top20">Product description <span class="pull-right small">$00.00</span></p>
-					</div><!-- end col-md-6 -->
-					
-					<div class="col-md-6">
-						<h4>Product Title</h4>						
-						<img src="http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393435-1366-768.jpg" width="360">
-						<p class="margin-top20">Product description <span class="pull-right small">$00.00</span></p>
-						
-					</div><!-- end col-md-6 -->
-					<div class="col-md-6">
-						<h4>Product Title</h4>
-						<img src="http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393435-1366-768.jpg" width="360">
-						<p class="margin-top20">Product description <span class="pull-right small">$00.00</span></p>
-					</div><!-- end col-md-6 -->		
-										
-										
-					<div class="col-md-6">
-						<h4>Product Title</h4>
-						<img src="http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393435-1366-768.jpg" width="360">
-						<p class="margin-top20">Product description <span class="pull-right small">$00.00</span></p>
-						
-					</div><!-- end col-md-6 -->
-					<div class="col-md-6">
-						<h4>Product Title</h4>
-						<img src="http://images6.fanpop.com/image/photos/33300000/Hamburger-hamburgers-33393435-1366-768.jpg" width="360">
-						<p class="margin-top20">Product description <span class="pull-right small">$00.00</span></p>
+						<h4>{{item.productTitle}}</h4>
+						<img ng-src="{{item.photo}}" width="360">
+						<p class="margin-top20">{{item.productDescr}}<span class="pull-right small">${{item.productPrice}}</span></p>
 					</div><!-- end col-md-6 -->
 				</div><!-- end col-md-8 -->
 				
