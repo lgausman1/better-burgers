@@ -1,21 +1,25 @@
-<script src="js/map.js" type="text/javascript"></script>
-<script>
-	initialize();
-</script>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<h1>Better Burger Locations</h1>
 			<h3>Find Us at a Location Near You</h3>
-			<div class="row margin-top60">
+			<div class="row margin-top60" ng-controller="MapController">
 				<div class="col-md-8">
 					<div id="map"><!-- load map -->
 						
 					</div><!-- end map div -->
 				</div><!-- end col-md-8 -->
 				<div class="col-md-3 col-md-offset-1">
-					<div id="sidebar">
-						<p>Location data goes here</p>
+					<div id="sidebar" class="well">
+						<h4>Better Burgers</h4>
+						<p>{{neighborhood}}</p>
+						<p>{{address}}</p>
+						<p>{{phone}}</p>
+						<img ng-src="{{photo}}" />
+						<!--var $neighborhood = $('p').text(obj.neighborhood).css('font-weight', 'bold');
+						//var $address = $('p').text(obj.address);
+						//var $phone = $('p').text(obj.phone);
+						//var $photo = $('img').attr('src', obj.photo); -->
 					</div>
 				</div><!-- end col-md-3 -->
 			</div><!-- end row -->

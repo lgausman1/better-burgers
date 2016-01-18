@@ -12,10 +12,9 @@ function initialize() {
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 
 	// locations for map markers and sidebar content
-	// refactor this to load json file
 	
 	var locations = $.ajax({
-		url: 'http://lindagausman.com/better-burgers/locations.js',
+		url: 'locations.js',
 		type: 'GET',
 		data: 'json'
 		});
@@ -35,10 +34,8 @@ function initialize() {
 					return function () {
 						$('#sidebar').empty();
 						$('#sidebar').append(content).show();
-	
-					} 
-				})
-				(marker, content, infowindow)); // end listener 
+					}; 
+				})(marker, content, infowindow)); // end listener 
 	
 			} // end create_marker
 	

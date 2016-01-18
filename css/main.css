@@ -66,7 +66,11 @@ body {
 }
 
 /* page styles */
-
+.home {
+    background-color: white;
+    margin: 50px auto;
+    min-height: 500px;
+}
 .intro {
 	font-size: 1.3em;
 	line-height: 1.7em;
@@ -83,7 +87,7 @@ body {
 }
 
 .coverPhoto {
-	border: 6px solid #ffffff;
+	border: 6px solid #ccc;
 	box-sizing: border-box;
 }
 
